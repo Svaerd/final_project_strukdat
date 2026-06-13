@@ -1,0 +1,22 @@
+package model;
+
+public class Course {
+    public String code;
+    public String name;
+    public int sks;
+    public int semester;
+    public String type;
+
+    public Course(String code, String name, int sks, int semester, String type) {
+        this.code = code;
+        this.name = name;
+        this.sks = sks;
+        this.semester = semester;
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return code + " - " + name + " (" + sks + " SKS)";
+    }
+}
