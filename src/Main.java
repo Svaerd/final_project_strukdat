@@ -212,11 +212,11 @@ public class Main {
         if (all.isEmpty()) {
             System.out.println("  (belum ada data)");
         } else {
-            System.out.printf("  %-8s %-45s %4s %5s %s%n", "KODE", "NAMA", "SKS", "SMT", "TIPE");
-            System.out.println("  " + "-".repeat(75));
+            System.out.printf("  %-8s %-45s %4s %5s %-10s %-6s %s%n", "KODE", "NAMA", "SKS", "SMT", "TIPE", "KUOTA", "DEPARTEMEN");
+            System.out.println("  " + "-".repeat(110));
             for (Course c : all) {
-                System.out.printf("  %-8s %-45s %4d %5d %s%n",
-                        c.code, c.name, c.sks, c.semester, c.type);
+                System.out.printf("  %-8s %-45s %4d %5d %-10s %-6d %s%n",
+                        c.code, c.name, c.sks, c.semester, c.type, c.kuota, c.departemen);
             }
             System.out.println("  Total: " + all.size() + " mata kuliah.");
         }
@@ -268,6 +268,12 @@ public class Main {
         String type = sc.nextLine().trim();
         if (type.isEmpty()) type = "Pilihan";
 
+        int kuota = readValidInt("Kuota: ");
+
+        System.out.print("Departemen Penyelenggara: ");
+        String departemen = sc.nextLine().trim();
+        if (departemen.isEmpty()) departemen = "Departemen Teknologi Informasi";
+
         System.out.println("\nMasukkan prasyarat matkul ini (pisahkan dengan koma, kosongkan jika tidak ada):");
         System.out.print("Prasyarat: ");
         String prereqInput = sc.nextLine().trim().toUpperCase();
@@ -280,7 +286,7 @@ public class Main {
         }
 
         // Tambah ke AVL Tree juga
-        Course newCourse = new Course(newCode, name, sks, semester, type);
+        Course newCourse = new Course(newCode, name, sks, semester, type, kuota, departemen);
         avlTree.insert(newCourse);
 
         // Jalankan simulasi di graph
@@ -314,7 +320,13 @@ public class Main {
         String type = sc.nextLine().trim();
         if (type.isEmpty()) type = "Wajib";
 
-        Course newCourse = new Course(code, name, sks, semester, type);
+        int kuota = readValidInt("Kuota: ");
+
+        System.out.print("Departemen Penyelenggara: ");
+        String departemen = sc.nextLine().trim();
+        if (departemen.isEmpty()) departemen = "Departemen Teknologi Informasi";
+
+        Course newCourse = new Course(code, name, sks, semester, type, kuota, departemen);
         avlTree.insert(newCourse);
         graph.addCourse(code);
 
