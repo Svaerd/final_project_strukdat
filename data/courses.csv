@@ -1,27 +1,27 @@
-IT101,Algorithms and Programming Techniques,4,1,Wajib
-IT102,Arsitektur and Organitation Computer,3,1,Wajib
-IT103,Information Technology Law and Ethics,2,1,Wajib
-IT104,Introduction to Electrical Engineering and Intelligent Informatics,2,1,Wajib
-IT105,Statistics and Probabilitys,2,1,Wajib
-IT201,Arsitektur Enterprise,3,2,Wajib
-IT202,Sistem Data Base,4,2,Wajib
-IT203,Sistem Operation,4,2,Wajib
-IT204,Data Structures and Object-Oriented Programming,3,2,Wajib
-IT301,Ethical Hacking and cybersecurity testing,4,3,Wajib
-IT302,Internet of Things,3,3,Wajib
-IT303,computer network security,3,3,Wajib
-IT304,Comunication Data and Network Computer,4,3,Wajib
-IT305,Profesional Comunication,2,3,Wajib
-IT306,Web Programing,4,3,Wajib
-IT401,Big Data and Data Lakehouse,3,4,Wajib
-IT402,Integration System,3,4,Wajib
-IT403,Artificial Inteligent and Machine Learning,4,4,Wajib
-IT404,Management Accident Cybersecurity Attack,3,4,Wajib
-IT405,Security Operations Center,3,4,Wajib
-IT406,Cloud Computer,4,4,Wajib
-IT501,Web Security and Aplication,3,5,Pilihan
-IT502,Kriptografi,3,5,Pilihan
-IT503,Mobile Programing,3,5,Pilihan
-IT504,Cloud Computing Optimization Strategy,3,5,Pilihan
-IT505,Information Technology Governance,3,5,Pilihan
-IT506,Smart City Technology,3,5,Pilihan
+IT101,Algorithms and Programming Techniques,4,1,Wajib,80,Departemen Teknologi Informasi
+IT102,Arsitektur and Organitation Computer,3,1,Wajib,120,Departemen Teknologi Informasi
+IT103,Information Technology Law and Ethics,2,1,Wajib,90,Departemen Teknologi Informasi
+IT104,Introduction to Electrical Engineering and Intelligent Informatics,2,1,Wajib,140,Departemen Teknologi Informasi
+IT105,Statistics and Probabilitys,2,1,Wajib,110,Departemen Teknologi Informasi
+IT201,Arsitektur Enterprise,3,2,Wajib,85,Departemen Teknologi Informasi
+IT202,Sistem Data Base,4,2,Wajib,95,Departemen Teknologi Informasi
+IT203,Sistem Operation,4,2,Wajib,105,Departemen Teknologi Informasi
+IT204,Data Structures and Object-Oriented Programming,3,2,Wajib,115,Departemen Teknologi Informasi
+IT301,Ethical Hacking and cybersecurity testing,4,3,Wajib,125,Departemen Teknologi Informasi
+IT302,Internet of Things,3,3,Wajib,135,Departemen Teknologi Informasi
+IT303,computer network security,3,3,Wajib,88,Departemen Teknologi Informasi
+IT304,Comunication Data and Network Computer,4,3,Wajib,98,Departemen Teknologi Informasi
+IT305,Profesional Comunication,2,3,Wajib,108,Departemen Teknologi Informasi
+IT306,Web Programing,4,3,Wajib,118,Departemen Teknologi Informasi
+IT401,Big Data and Data Lakehouse,3,4,Wajib,128,Departemen Teknologi Informasi
+IT402,Integration System,3,4,Wajib,138,Departemen Teknologi Informasi
+IT403,Artificial Inteligent and Machine Learning,4,4,Wajib,82,Departemen Teknologi Informasi
+IT404,Management Accident Cybersecurity Attack,3,4,Wajib,92,Departemen Teknologi Informasi
+IT405,Security Operations Center,3,4,Wajib,102,Departemen Teknologi Informasi
+IT406,Cloud Computer,4,4,Wajib,112,Departemen Teknologi Informasi
+IT501,Web Security and Aplication,3,5,Pilihan,122,Departemen Teknologi Informasi
+IT502,Kriptografi,3,5,Pilihan,132,Departemen Teknologi Informasi
+IT503,Mobile Programing,3,5,Pilihan,84,Departemen Teknologi Informasi
+IT504,Cloud Computing Optimization Strategy,3,5,Pilihan,94,Departemen Teknologi Informasi
+IT505,Information Technology Governance,3,5,Pilihan,104,Departemen Teknologi Informasi
+IT506,Smart City Technology,3,5,Pilihan,114,Departemen Teknologi Informasi
