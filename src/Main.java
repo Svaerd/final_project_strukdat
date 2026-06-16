@@ -82,6 +82,20 @@ public class Main {
         }
     }
 
+    // ==================== HELPER METHODS ====================
+
+    static int readValidInt(String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            String input = sc.nextLine().trim();
+            try {
+                return Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("  [!] Input tidak valid! Harap masukkan angka bulat yang benar.");
+            }
+        }
+    }
+
     // ==================== MENU DISPLAY ====================
 
     static void printMenu() {
@@ -256,13 +270,8 @@ public class Main {
         System.out.print("Nama matkul: ");
         String name = sc.nextLine().trim();
 
-        System.out.print("SKS: ");
-        int sks = 3;
-        try { sks = Integer.parseInt(sc.nextLine().trim()); } catch (Exception e) { /* default */ }
-
-        System.out.print("Semester: ");
-        int semester = 6;
-        try { semester = Integer.parseInt(sc.nextLine().trim()); } catch (Exception e) { /* default */ }
+        int sks = readValidInt("SKS: ");
+        int semester = readValidInt("Semester: ");
 
         System.out.print("Tipe (Wajib/Pilihan): ");
         String type = sc.nextLine().trim();
@@ -310,12 +319,8 @@ public class Main {
 
         System.out.print("Nama: ");
         String name = sc.nextLine().trim();
-        System.out.print("SKS: ");
-        int sks = 3;
-        try { sks = Integer.parseInt(sc.nextLine().trim()); } catch (Exception e) {}
-        System.out.print("Semester: ");
-        int semester = 1;
-        try { semester = Integer.parseInt(sc.nextLine().trim()); } catch (Exception e) {}
+        int sks = readValidInt("SKS: ");
+        int semester = readValidInt("Semester: ");
         System.out.print("Tipe (Wajib/Pilihan): ");
         String type = sc.nextLine().trim();
         if (type.isEmpty()) type = "Wajib";
